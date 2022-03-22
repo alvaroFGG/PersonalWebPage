@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,100;1,200;1,300&family=Ubuntu:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/*Estilos de header*/
+.navbar{
+    position: fixed;
+    /*background: #0076d6;*/
+    width: 100%;
+    padding: 20px 0;
+    font-family: 'Ubuntu';
+    transition: all 0.5s ease;
+}
+
+.navbar .menu-btn{
+    color: #fff;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+
+.navbar.sticky {
+    background: #0076d6;
+    padding: 20px 0;
+    color: aliceblue;
+}
+
+
+
+.navbar.sticky .menu li a:hover{
+    color: #0076d6;
+    background-color: aliceblue;
+    padding: 4px 11px;
+    border-radius: 7px;
+}
+
+.navbar.sticky .logo a span{
+    color: aliceblue;
+} 
+
+.navbar .logo a{
+    color: aliceblue;
+    font-size: 35px;
+    font-weight: 600;
+}
+.navbar .logo a span{
+    color: #0076d6;
+}
+.navbar .menu li a{
+    color: aliceblue;
+    font-size: 17px;
+    font-weight: 500;
+    margin-left: 20px;
+    transition: color 0.3s ease;
+}
+
+.navbar .menu li a:hover{
+    color: #0076d6;
+}
+
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.max-width{
+    max-width: 1300px;
+    padding: 0 50px;
+    margin: auto;
+}
+
+
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+
+/*Styles for HOME*/
+.home{
+    display: flex;
+    background: url("img/FONDO_FUENTE.jpeg") no-repeat center;
+    height: 100vh;
+    color: aliceblue;
+    min-height: 500px;
+}
+
+.home-content{
+    font-family: "Ubuntu";
+    font-size: 30px;
+}
+
+.home .max-width{
+    margin: auto 0 auto 800px ;
+}
+
+.home-content .text-2{
+    font-weight: 700;
+    font-size: 50px;
+}
+
+.home-content .text-contact{
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.home-content .text-contact a{
+    background-color: #0076d6;
+    color: aliceblue;
+    padding: 10px 30px;
+    border-radius: 6px;
+}
+
+.home-content .text-contact a:hover{
+    color: #0076d6;
+    background-color: aliceblue;
+    
+}
+
+.text-3 span{
+    color: #0076d6;
+}
+
+.about{
+    margin-bottom: 30px;
+}
+
+.about .about-content{
+    display: flex;
+    text-align: center;
+}
+
+
+.about .about-content p{
+    text-align: left;
+    font-family: "Poppins";
+}
+
+.about .about-content .left img{
+    width: 50%;
+}
+
+
+.about .about-content .left{
+    width: 40%;
+}
+
+.about .about-content .right{
+    width: 60%;
+}
+
+.about .about-content .right .name{
+    font-weight: bolder;
+    font-size: 19px;
+}
+
+.about .title{
+    text-align: center;
+    font-family: "Ubuntu";
+    font-size: 30px;
+    font-weight: bolder;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    text-decoration:overline #0076d6;
+}
+
+.skills{
+    background: #2C394B;
+    padding-top: 17px;
+}
+
+.skills .skills-content{
+    display: flex;
+    text-align: center;
+}
+
+.skills .skills-content .text{
+    text-decoration: underline;
+    font-family: "Ubuntu";
+    font-size: 20px;
+    margin-bottom: 7px;
+}
+
+.skills .skills-content p{
+    text-align: left;
+}
+
+.skills .skills-content .card{
+    width: calc(33% - 20px);
+    margin: 20px;
+    font-size: 17px;
+    font-family: "Poppins";
+    color: aliceblue;
+}
+
+.skills .skills-content .card i{
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #0076d6;
+}
+
+.skills .skills-content .box{
+    background-color: #30475E;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.skills .skills-content ul{
+    text-align: center;
+    list-style: none;
+}
+
+.skills .title{
+    text-align: center;
+    font-family: "Ubuntu";
+    font-size: 30px;
+    font-weight: bolder;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    color: aliceblue;
+    text-decoration:overline #0076d6;
+}
+
+.experience{
+    margin-bottom: 20px;
+}
+
+.experience .title{
+    text-align: center;
+    font-family: "Ubuntu";
+    font-size: 30px;
+    font-weight: bolder;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    text-decoration:overline #0076d6;
+}
+
+.experience .experience-content{
+    display: flex;
+    text-align: center;
+}
+
+.experience .experience-content .left{
+    width: 50%;
+}
+
+.experience .experience-content .right{
+    width: 50%;
+}
+
+.experience .experience-content .right img{
+    width: 40%;
+    border-radius: 20px;
+}
+
+.experience .experience-content p{
+    text-align: left;
+    font-family: "Poppins";
+}
+
+@media (max-width: 690px){
+    .home-content{
+        font-size: 25px;
+    }
+
+    .home-content .text-2{
+        font-weight: 900;
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 947px){
+
+}
+
+@media (max-width: 947px){
+    .max-width{
+        padding: 0 50px;
+    }
+
+    .navbar .menu-btn{
+        display: block;
+        z-index: 999;
+    }
+
+    .navbar .menu{
+        position: fixed;
+        height: 50vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        padding-top: 20px;
+        background: #0076d6;
+        text-align: center;
+        transition: all 0.5s ;
+        opacity: 0.8;
+
+    }
+
+    .navbar .menu.active{
+        left: 0;
+    }
+
+    .navbar .menu-btn i.active::before{
+        content: "\f00d ";
+    }
+    
+    .navbar .menu li{
+        display: block;
+    }
+
+    .navbar .menu li a{
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 20px;
+    }
+
+    .home .max-width{
+        margin: auto 0 auto 160px ;
+    }
+}
+
